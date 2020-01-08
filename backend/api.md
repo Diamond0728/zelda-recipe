@@ -1,12 +1,17 @@
 # 食谱
 [根据食材得到菜肴](#根据食材得到菜肴)
+
 [添加菜谱](#添加菜谱)
+
 [搜索菜(模糊搜索)](#搜索菜(模糊搜索))
+
 [根据菜查询菜谱](#根据菜查询菜谱)
+
 [根据食材查询图片](#根据食材查询图片)
+
 ### 根据食材得到菜肴
 
-`post /api/v1/dish/predict`
+`post /api/1.0/dish/predict`
 
 request
 ```json
@@ -29,7 +34,7 @@ response
 ```
 
 ### 添加菜谱
-
+`post /api/1.0/dish/add`
 request
 ```js
 {
@@ -51,6 +56,7 @@ response
 ```
 
 ### 搜索菜(模糊搜索)
+`post /api/1.0/dish/search`
 request
 ```js
 {
@@ -76,6 +82,7 @@ response
 ```
 
 ### 根据菜查询菜谱
+`post /api/1.0/dish/list`
 request
 ```js
 {
@@ -107,6 +114,7 @@ response
 ```
 
 ### 根据食材查询图片
+`post /api/1.0/food/img`
 request
 ```js
 [
