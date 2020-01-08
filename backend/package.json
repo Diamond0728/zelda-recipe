@@ -1,0 +1,30 @@
+{
+  "name": "koa-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e ts --exec ts-node  ./src/app.ts"
+  },
+  "author": "diamond",
+  "license": "MIT",
+  "dependencies": {
+    "@types/crypto-js": "^3.1.43",
+    "@types/koa2-cors": "^2.0.1",
+    "crypto-js": "^3.1.9-1",
+    "dayjs": "^1.8.16",
+    "koa": "^2.8.1",
+    "koa-body": "^4.1.1",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.49",
+    "@types/koa-router": "^7.0.42",
+    "nodemon": "^1.19.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",                    
+    "module": "commonjs",                  
+    "lib": ["es6"],                        
+    "sourceMap": true,                     
+    "outDir": "dist",
+    "strict": true,                   
+
+    "moduleResolution": "node",            
+    "baseUrl": ".",                        
+    "esModuleInterop": true,              
+    "experimentalDecorators": true,        
+    "emitDecoratorMetadata": true,
+    "types": [
+      "koa-body",
+      "crypto-js"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist/"
+  ]
+}
