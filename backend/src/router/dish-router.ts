@@ -30,4 +30,15 @@ router.post("/add", async (ctx: Context) => {
   }
 })
 
+router.post('/predict', async (ctx: Context) => {
+  const foods = ctx.request.body
+  const dish = await Dish.findOne({ foods }).exec()
+  if(dish) {
+    ctx.body = {
+      success: true,
+      data
+    }
+  }
+})
+
 export default router.routes()
