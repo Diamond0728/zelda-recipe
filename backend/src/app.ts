@@ -2,6 +2,7 @@ import koa from 'koa'
 import koaBody from 'koa-body'
 import routers from  './router'
 import cors from 'koa2-cors'
+import mongoose from 'mongoose'
 
 const app = new koa()
 
